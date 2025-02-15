@@ -4,6 +4,12 @@ app_publisher = "bwh"
 app_description = "Manage rentals in frappe"
 app_email = "saimani@frappe.io"
 app_license = "mit"
+#app_include_css = "/assets/rentals/rentals/public/css/custom.css"
+#app_include_css = "/assets/rentals/css/custom.css"
+
+
+# Add your js file to the app's public assets
+#app_include_js = "/assets/rentals/js/work.js"s
 
 # Apps
 # ------------------
@@ -150,12 +156,25 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
+doc_events = {
+    "ToDo": {
+        "before_insert": "rentals.api.throw_emoji"
+    }
+}
+scheduler_events = {
+    "cron": {
+        "30 15 * * 3": [  # Runs at 3:30 PM every Wednesday (day 3)
+            "rentals.api.send_payment_reminders"
+        ]
+    }
+}
 
 # scheduler_events = {
 # 	"all": [
 # 		"rentals.tasks.all"
 # 	],
-# 	"daily": [
+# 	"daily": [scheduler events =
+
 # 		"rentals.tasks.daily"
 # 	],
 # 	"hourly": [
@@ -244,4 +263,5 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
 
