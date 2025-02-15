@@ -1,0 +1,46 @@
+2025-02-07 13:59:51,524 INFO ipython === bench console session ===
+2025-02-07 13:59:51,524 INFO ipython \q
+2025-02-07 13:59:51,524 INFO ipython import frappe
+print(frappe.db.get_value("User", "Administrator", "enabled"))
+2025-02-07 13:59:51,524 INFO ipython import frappe
+roles = frappe.get_roles("Administrator")
+print(roles)
+2025-02-07 13:59:51,524 INFO ipython user = frappe.get_doc("User", "Administrator")
+user.add_roles("Administrator", "System Manager")
+frappe.db.commit()
+2025-02-07 13:59:51,524 INFO ipython permissions = frappe.get_all("Custom DocPerm", filters={"parent": "Article"})
+print(permissions)
+2025-02-07 13:59:51,525 INFO ipython === session end ===
+2025-02-08 14:47:13,822 INFO ipython === bench console session ===
+2025-02-08 14:47:13,822 INFO ipython exit;
+2025-02-08 14:47:13,822 INFO ipython === session end ===
+2025-02-10 15:58:43,985 INFO ipython === bench console session ===
+2025-02-10 15:58:43,986 INFO ipython frappe.get_all("Error Log", order_by="creation desc", limit=5)
+2025-02-10 15:58:43,986 INFO ipython frappe.db.truncate("Error Log")
+frappe.db.commit()
+2025-02-10 15:58:43,986 INFO ipython exit;
+2025-02-10 15:58:43,986 INFO ipython === session end ===
+2025-02-10 16:01:44,686 INFO ipython === bench console session ===
+2025-02-10 16:01:44,686 INFO ipython frappe.db.truncate("Error Log")
+frappe.db.commit()
+exit
+2025-02-10 16:01:44,686 INFO ipython exit;
+2025-02-10 16:01:44,686 INFO ipython === session end ===
+2025-02-14 15:15:22,446 INFO ipython === bench console session ===
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rentals Settings", "standard_rate")]
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rentals Settings", "standard_rate"
+
+\q
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rentals Settings", "standard_rate"
+\q
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rentals Settings", "standard_rate")
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rental Settings", "standard_rate")
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rental Settings", "standard_rate")
+2025-02-14 15:15:22,446 INFO ipython frappe.db.get_single_value("Rental Settings", "standard_currency")
+2025-02-14 15:15:22,446 INFO ipython \q
+2025-02-14 15:15:22,446 INFO ipython exit;
+2025-02-14 15:15:22,446 INFO ipython === session end ===
+2025-02-14 17:09:12,763 INFO ipython === bench console session ===
+2025-02-14 17:09:12,764 INFO ipython frappe.db.get_singles_dict("Rental Settings")
+2025-02-14 17:09:12,764 INFO ipython exit;
+2025-02-14 17:09:12,765 INFO ipython === session end ===

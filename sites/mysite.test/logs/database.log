@@ -1,0 +1,8 @@
+2025-02-15 11:13:40,608 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle` MODIFY `year` int NOT NULL DEFAULT 0, MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2025-02-15 11:42:38,352 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle` ADD COLUMN `audit_completed` tinyint NOT NULL DEFAULT 0
+2025-02-15 11:42:38,394 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `year` int NOT NULL DEFAULT 0
+2025-02-15 12:32:44,972 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRide order` MODIFY `is_published` tinyint NOT NULL DEFAULT 0

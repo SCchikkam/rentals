@@ -1,0 +1,15 @@
+_HiStOrY_V2_
+desc\040tabArticle;
+\134q
+desc\040doctype;
+select\040*\040from\040tabdriver;
+select\040*\040from\040tabDriver;
+exit;
+\134q
+select\040*\040from\040tabRentalSettings;
+select\040*\040from\040tabSingles;
+SELECT\040*\040FROM\040tabSingles\040WHERE\040doctype\040=\040"Rentals\040Settings";
+exit;
+SELECT\040*\040FROM\040tabSingles\040WHERE\040doctype\040=\040"Rental\040\040Settings";
+SELECT\040*\040FROM\040tabSingles\040WHERE\040doctype\040=\040"Renta\040Settings";
+exit;
