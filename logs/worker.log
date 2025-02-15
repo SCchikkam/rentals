@@ -15445,3 +15445,6 @@ Error 61 connecting to 127.0.0.1:11000. Connection refused.
 2025-02-15 15:14:22,865 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:short
 2025-02-15 15:14:22,867 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:default
 2025-02-15 15:14:22,868 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:long
+2025-02-15 15:27:52,989 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:short
+2025-02-15 15:27:52,990 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:default
+2025-02-15 15:27:52,992 Cleaning registries for queue: Users-saimanikanta-Desktop-ezapp-ez-frappe-bench:long
